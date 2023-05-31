@@ -1,0 +1,60 @@
+﻿<Window x:Class="RentACarApplication.AracTakibiPenceresi"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RentACarApplication"
+        mc:Ignorable="d"
+        Title="Araç Takibi Penceresi" Height="600" Width="1000"
+        SizeToContent="Width" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <ListView Background="AliceBlue" x:Name="arabaListesi" ItemsSource="{Binding Araba}" Height="564" VerticalAlignment="Center" d:ItemsSource="{d:SampleData ItemCount=5000}">
+            <ListView.Resources>
+                <Style TargetType="GridViewColumnHeader">
+                    <Setter Property="FontWeight" Value="Bold"/>
+                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                    <Setter Property="ContentTemplate">
+                        <Setter.Value>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding}" TextAlignment="Center"/>
+                            </DataTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                    <Setter Property="Background" Value="Transparent"/>
+                    <Style.Triggers>
+                        <Trigger Property="ItemsControl.AlternationIndex" Value="1">
+                            <Setter Property="Background" Value="#F0F0F0"/>
+                        </Trigger>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="Background" Value="#0078D7"/>
+                            <Setter Property="Foreground" Value="White"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </ListView.Resources>
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                </Style>
+            </ListView.ItemContainerStyle>
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="ID" DisplayMemberBinding="{Binding Id}" Width="20"/>
+                    <GridViewColumn Header="Araba ID" DisplayMemberBinding="{Binding Plaka}" Width="100"/>
+                    <GridViewColumn Header="Marka" DisplayMemberBinding="{Binding Marka}" Width="100"/>
+                    <GridViewColumn Header="Model" DisplayMemberBinding="{Binding Model}" Width="100"/>
+                    <GridViewColumn Header="Tip" DisplayMemberBinding="{Binding Tip}" Width="50"/>
+                    <GridViewColumn Header="Renk" DisplayMemberBinding="{Binding Renk}" Width="100"/>
+                    <GridViewColumn Header="Vites" DisplayMemberBinding="{Binding Vites}" Width="100"/>
+                    <GridViewColumn Header="Yakıt" DisplayMemberBinding="{Binding Yakit}" Width="100"/>
+                    <GridViewColumn Header="Trip" DisplayMemberBinding="{Binding Trip, StringFormat=N2}" Width="100"/>
+                    <GridViewColumn Header="Müsaitlik" DisplayMemberBinding="{Binding Musaitlik}" Width="100"/>
+                    <GridViewColumn Header="Fiyat" DisplayMemberBinding="{Binding Fiyat, StringFormat=N2}" Width="100"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>
