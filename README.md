@@ -1,13 +1,14 @@
-# BST206-21430070021-RentACar-WPFApplication
-21430070021 Batuhan CAN - BST206 Final Ödevi
+# Car Rental Application by Batuhan CAN
 
-#TUR
+Bu bir oto kiralama acentesi otomasyonudur. Sql Server ile güvenli bir şekilde tüm verileriniz korunur. Arabalara ait bir tabloda arabaların id(otomatik oluşturulur), plaka, marka, model, tip, renk, vites, yakıt, trip bilgisi, müsaitlik durumu, günlük ücret gibi bilgileri saklar. Arayüzde araç ekleme, çıkarma ve düzenleme butonları bulunmaktadır. Silme işleminde müsaitlik durumunu "ATIL DURUMDA" olarak işaretlenir ve böylelikle tamamen silme sonucu ortaya çıkabilecek veri kayıplarının önüne geçilir. Araç ve iş takibi yapmanız için gerekli butonlar bulunmaktadır ve tüm satışlar ve araçlar (atıl durumda olanlar da) listelenir. Ana sayfada atıl durumda olanların haricindeki tüm araçlar zaten listelenmektedir. İstediğiniz bir araca tıkladığınızda sağdaki panelde araç hakkında tüm bilgileri görebilirsiniz. Seçildikten sonra kiraya verme, teslim alma, boşa çıkarma ve bakıma alma butonlarını ihtiyacınız durumunda işlerinizi ve araçlarınızı takip edebilirsiniz. Tüm işlemleriniz beşeri hatalara karşı kontrol edilerek yapılmaktadır. Yani yanlışlıkla girilecek hatalı veri ve yanlış butona tıklama gibi durumlar önlenmektedir.
 
-Bu bir Oto kiralama uygulamasıdır. Acente olarak bu uygulamayı kullanarak müşterilerinizin istediği araçları rezerve edip takibini sağlayabilirsiniz. Veritabanı bağlantıları sayesinde verileriniz güvenli bir şekilde korunur ve iş takibinizin sekteye uğramasını engeller.
-Kullanıcı dostu tasarım ile çalışanlarınızın iş verimliliğini artırmaya yardımcı olur.
+Kiraya verme butonunda bir form çıkmaktadır. Burada tc, ad, soyad ve kiraya verilecek gün sayısı istenmektedir. Yapılan girişler, kiralamalar adlı tabloda saklanacaktır. Arabalar tablosu ile ilişkili olan bu tabloda kimin ne zaman hangi aracı kiraladığını ve ne kadar ücret ödediği kaydedilmektedir. Geriye dönük her türlü veri depolanır ve istendiğinde uygulama içerisinde görüntülenebilir. Kirada olan bir araç yanlışlıkla yeniden kiraya verilemez, gerekli kontroller yapılmaktadır.
 
+Teslim alma butonuna tıklandığında açılan formda aracın güncel trip bilgisi yazılmalıdır. Eskisinden büyük olması gerekir, yanlış girilmesine müsade edilmez. Giriş sonrası aracın trip bilgisi güncellenir ve araç "inceleme" durumuna alınır. Bu durumdayken isterseniz bakıma alabilirsiniz, isterseniz direkt boşa çıkarabilirsiniz.
 
-#ENG
+Uygulamanın tüm kodları repoda bulunmakta. İndirdiğiniz projedeki "SqlServerBaglanti.cs" adındaki dosyada bağlantı parametresini kendi sql server ayarlarınıza göre güncelleyin. İsterseniz güncelleme sonrası projeye dahil olan setup projesini yeniden derleyerek size sorunsuz çalışacak olan projenin kurulum dosyasını elde edersiniz. Gerekli veritabanı dosyası hem repoda hem de setup projesinde bulunmaktadır.
 
-This is a car rental application. As an agency, you can use this application to reserve and track the vehicles requested by your customers. Through database connections, your data is securely protected, preventing any disruption in your business tracking.
-It helps enhance the productivity of your employees with its user-friendly design.
+Uygulamanın sorunsuz çalışması için cihazınızda "Sql Server Management Studio 18" ve üstü kurulu olması gerekiyor. 
+Kurulum sonrası masaüstüne gelen "RentACarDB.bak" dosyasını, sql server aracılığıyla sisteme entegre edin.
+
+Uygulama tanıtım videosu:
