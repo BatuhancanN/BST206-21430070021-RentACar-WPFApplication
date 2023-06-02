@@ -6,7 +6,7 @@ Kiraya verme butonunda bir form çıkmaktadır. Burada tc, ad, soyad ve kiraya v
 
 Teslim alma butonuna tıklandığında açılan formda aracın güncel trip bilgisi yazılmalıdır. Eskisinden büyük olması gerekir, yanlış girilmesine müsade edilmez. Giriş sonrası aracın trip bilgisi güncellenir ve araç "inceleme" durumuna alınır. Bu durumdayken isterseniz bakıma alabilirsiniz, isterseniz direkt boşa çıkarabilirsiniz.
 
-Uygulamanın tüm kodları repoda bulunmakta. İndirdiğiniz projedeki "SqlServerBaglanti.cs" adındaki dosyada bağlantı parametresini kendi sql server ayarlarınıza göre güncelleyin. İsterseniz güncelleme sonrası projeye dahil olan setup projesini yeniden derleyerek size sorunsuz çalışacak olan projenin kurulum dosyasını elde edersiniz. Gerekli veritabanı dosyası hem repoda hem de setup projesinde bulunmaktadır.
+Uygulamanın tüm kodları repoda bulunmakta. İndirdiğiniz projedeki "SqlServerBaglanti.cs" adındaki dosyada bağlantı parametresini kendi sql server ayarlarınıza göre güncelleyin. İsterseniz güncelleme sonrası projeye dahil olan setup projesini yeniden derleyerek sizde sorunsuz çalışacak olan projenin kurulum dosyasını elde edersiniz. Gerekli veritabanı dosyası hem repoda hem de setup projesinde bulunmaktadır.
 
 Uygulamanın sorunsuz çalışması için cihazınızda "Sql Server Management Studio 18" ve üstü kurulu olması gerekiyor. 
 Kurulum sonrası masaüstüne gelen "RentACarDB.bak" dosyasını, sql server aracılığıyla sisteme entegre edin.
