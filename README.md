@@ -13,4 +13,4 @@ Kurulum sonrası masaüstüne gelen "RentACarDB.bak" dosyasını, sql server ara
 
 Tanıtım Videosu: https://www.youtube.com/watch?v=k6XKBCwZQUk
 
-Kurulum videosu: https://www.youtube.com/watch?v=raWy0Bda2aI
+Kurulum Videosu: https://www.youtube.com/watch?v=raWy0Bda2aI
