@@ -82,7 +82,7 @@ namespace RentACarApplication
             }
             else
             {
-                MessageBox.Show("Lütfen bir araç seçin.");
+                MessageBox.Show("Lütfen bir araç seçin.", "Hatalı İşlem Tespit Edildi", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
@@ -90,7 +90,7 @@ namespace RentACarApplication
         {
             if (SeciliAraba != null)
             {
-                MessageBoxResult result = MessageBox.Show("Silme işlemini onaylıyor musunuz?\nGeri döndürmek için teknik yardım almanız gerekebilir!", $"{SeciliAraba.Plaka} plakalı aracı silme onayı", MessageBoxButton.OKCancel);
+                MessageBoxResult result = MessageBox.Show("Silme işlemini onaylıyor musunuz?\nGeri döndürmek için teknik yardım almanız gerekebilir!", $"{SeciliAraba.Plaka} plakalı aracı silme onayı", MessageBoxButton.OKCancel, MessageBoxImage.Exclamation);
                 if (result == MessageBoxResult.OK)
                 {
                     try
@@ -110,18 +110,18 @@ namespace RentACarApplication
                                 {
                                     arabalar.Clear();
                                     ArabaYukle();
-                                    MessageBox.Show("Araç başarıyla silindi.\nVeri kaybına sebep olmamak için gerekli düzenlemeler yapıldı.");
+                                    MessageBox.Show("Araç başarıyla silindi.\nVeri kaybına sebep olmamak için gerekli düzenlemeler yapıldı.", "Bilgi", MessageBoxButton.OK, MessageBoxImage.Information);
                                 }
                             }
                         }
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show("Hata: " + ex.Message);
+                        MessageBox.Show("Hata: " + ex.Message, "Hatalı İşlem Tespit Edildi", MessageBoxButton.OK, MessageBoxImage.Error);
                     }
                 }
             }
-            else MessageBox.Show("Lütfen bir araç seçin.");
+            else MessageBox.Show("Lütfen bir araç seçin.", "Hatalı İşlem Tespit Edildi", MessageBoxButton.OK, MessageBoxImage.Error);
         }
 
         private void kiralaButonu_Click(object sender, RoutedEventArgs e)
@@ -172,21 +172,21 @@ namespace RentACarApplication
                                     {
                                         arabalar.Clear();
                                         ArabaYukle();
-                                        MessageBox.Show("Araç kiraya verildi ve kiralama bilgileri kaydedildi.");
+                                        MessageBox.Show("Araç kiraya verildi ve kiralama bilgileri kaydedildi.", "Bilgi", MessageBoxButton.OK, MessageBoxImage.Information);
                                     }
                                 }
                             }
                         }
                         catch (Exception ex)
                         {
-                            MessageBox.Show("Hata: " + ex.Message);
+                            MessageBox.Show("Hata: " + ex.Message, "Hatalı İşlem Tespit Edildi", MessageBoxButton.OK, MessageBoxImage.Error);
                         }
                     }
                 }
-                else MessageBox.Show("Bu araç kirada.");
-                
+                else MessageBox.Show("Bu araç şu anda kiraya verilemez.", "Hatalı İşlem Tespit Edildi", MessageBoxButton.OK, MessageBoxImage.Error);
+
             }
-            else MessageBox.Show("Lütfen bir araç seçin.");
+            else MessageBox.Show("Lütfen bir araç seçin.", "Hatalı İşlem Tespit Edildi", MessageBoxButton.OK, MessageBoxImage.Error);
         }
 
         private void teslimatButonu_Click(object sender, RoutedEventArgs e)
@@ -229,14 +229,14 @@ namespace RentACarApplication
                                     {
                                         arabalar.Clear();
                                         ArabaYukle();
-                                        MessageBox.Show("Araç teslim alındı ve bilgileri kaydedildi.");
+                                        MessageBox.Show("Araç teslim alındı ve bilgileri kaydedildi.", "Bilgi", MessageBoxButton.OK, MessageBoxImage.Information);
                                     }
                                 }
                             }
                         }
                         catch (Exception ex)
                         {
-                            MessageBox.Show("Hata: " + ex.Message);
+                            MessageBox.Show("Hata: " + ex.Message, "Hatalı İşlem Tespit Edildi", MessageBoxButton.OK, MessageBoxImage.Error);
                         }
                     }
                     else
@@ -246,12 +246,12 @@ namespace RentACarApplication
                 }
                 else
                 {
-                    MessageBox.Show("Bu araç kirada değil.");
+                    MessageBox.Show("Bu araç kirada değil.", "Hatalı İşlem Tespit Edildi", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
             else
             {
-                MessageBox.Show("Lütfen bir araç seçin.");
+                MessageBox.Show("Lütfen bir araç seçin.", "Hatalı İşlem Tespit Edildi", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
@@ -278,18 +278,18 @@ namespace RentACarApplication
                             {
                                 arabalar.Clear();
                                 ArabaYukle();
-                                MessageBox.Show("Araç müsait durumuna alındı.");
+                                MessageBox.Show("Araç müsait durumuna alındı.", "Bilgi", MessageBoxButton.OK, MessageBoxImage.Information);
                             }
                         }
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show("Hata: " + ex.Message);
+                        MessageBox.Show("Hata: " + ex.Message, "Hatalı İşlem Tespit Edildi", MessageBoxButton.OK, MessageBoxImage.Error);
                     }
                 }
-                else MessageBox.Show("Bu araç boşa çıkarmak için uygun değil.");
+                else MessageBox.Show("Bu araç boşa çıkarmak için uygun değil.", "Hatalı İşlem Tespit Edildi", MessageBoxButton.OK, MessageBoxImage.Error);
             }
-            else MessageBox.Show("Lütfen bir araç seçin.");
+            else MessageBox.Show("Lütfen bir araç seçin.", "Hatalı İşlem Tespit Edildi", MessageBoxButton.OK, MessageBoxImage.Error);
         }
 
         private void bakimButonu_Click(object sender, RoutedEventArgs e)
@@ -315,18 +315,18 @@ namespace RentACarApplication
                             {
                                 arabalar.Clear();
                                 ArabaYukle();
-                                MessageBox.Show("Araç bakıma alındı.");
+                                MessageBox.Show("Araç bakıma alındı.", "Bilgi", MessageBoxButton.OK, MessageBoxImage.Information);
                             }
                         }
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show("Hata: " + ex.Message);
+                        MessageBox.Show("Hata: " + ex.Message, "Hatalı İşlem Tespit Edildi", MessageBoxButton.OK, MessageBoxImage.Error);
                     }
                 }
-                else MessageBox.Show("Bu araç bakım için uygun değil.");
+                else MessageBox.Show("Bu araç bakım için uygun değil.", "Hatalı İşlem Tespit Edildi", MessageBoxButton.OK, MessageBoxImage.Error);
             }
-            else MessageBox.Show("Lütfen bir araç seçin.");
+            else MessageBox.Show("Lütfen bir araç seçin.", "Hatalı İşlem Tespit Edildi", MessageBoxButton.OK, MessageBoxImage.Error);
         }
 
         private void listeleButonu_Click(object sender, RoutedEventArgs e)

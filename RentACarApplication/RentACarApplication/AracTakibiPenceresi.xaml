@@ -42,17 +42,17 @@
             </ListView.ItemContainerStyle>
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="ID" DisplayMemberBinding="{Binding Id}" Width="20"/>
-                    <GridViewColumn Header="Araba ID" DisplayMemberBinding="{Binding Plaka}" Width="100"/>
+                    <GridViewColumn Header="ID" DisplayMemberBinding="{Binding Id}" Width="30"/>
+                    <GridViewColumn Header="Plaka" DisplayMemberBinding="{Binding Plaka}" Width="100"/>
                     <GridViewColumn Header="Marka" DisplayMemberBinding="{Binding Marka}" Width="100"/>
                     <GridViewColumn Header="Model" DisplayMemberBinding="{Binding Model}" Width="100"/>
                     <GridViewColumn Header="Tip" DisplayMemberBinding="{Binding Tip}" Width="50"/>
                     <GridViewColumn Header="Renk" DisplayMemberBinding="{Binding Renk}" Width="100"/>
                     <GridViewColumn Header="Vites" DisplayMemberBinding="{Binding Vites}" Width="100"/>
                     <GridViewColumn Header="Yakıt" DisplayMemberBinding="{Binding Yakit}" Width="100"/>
-                    <GridViewColumn Header="Trip" DisplayMemberBinding="{Binding Trip, StringFormat=N2}" Width="100"/>
+                    <GridViewColumn Header="Trip (Km)" DisplayMemberBinding="{Binding Trip, StringFormat=N2}" Width="100"/>
                     <GridViewColumn Header="Müsaitlik" DisplayMemberBinding="{Binding Musaitlik}" Width="100"/>
-                    <GridViewColumn Header="Fiyat" DisplayMemberBinding="{Binding Fiyat, StringFormat=N2}" Width="100"/>
+                    <GridViewColumn Header="Fiyat (Tl)" DisplayMemberBinding="{Binding Fiyat, StringFormat=N2}" Width="100"/>
                 </GridView>
             </ListView.View>
         </ListView>

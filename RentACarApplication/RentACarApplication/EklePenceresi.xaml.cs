@@ -40,19 +40,19 @@ namespace RentACarApplication
 
                 if (!Decimal.TryParse(tripBox.Text.Trim(), NumberStyles.Number, CultureInfo.InvariantCulture, out trip))
                 {
-                    MessageBox.Show("Geçersiz TRİP değeri!");
+                    MessageBox.Show("Geçersiz TRİP değeri!", "Hatalı İşlem Tespit Edildi", MessageBoxButton.OK, MessageBoxImage.Error);
                     return;
                 }
 
                 if (!Decimal.TryParse(fiyatBox.Text.Trim(), NumberStyles.Number, CultureInfo.InvariantCulture, out fiyat))
                 {
-                    MessageBox.Show("Geçersiz fiyat değeri!");
+                    MessageBox.Show("Geçersiz fiyat değeri!", "Hatalı İşlem Tespit Edildi", MessageBoxButton.OK, MessageBoxImage.Error);
                     return;
                 }
 
                 if (plaka.Length > 9)
                 {
-                    MessageBox.Show("Geçersiz plaka formatı! Plaka en fazla 9 karakter olmalıdır.");
+                    MessageBox.Show("Geçersiz plaka formatı! Plaka en fazla 9 karakter olmalıdır.", "Hatalı İşlem Tespit Edildi", MessageBoxButton.OK, MessageBoxImage.Error);
                     return;
                 }
 
@@ -80,19 +80,19 @@ namespace RentACarApplication
                             if (result > 0)
                             {
                                 this.Close();
-                                MessageBox.Show("Araba başarıyla kaydedildi.");
+                                MessageBox.Show("Araba başarıyla kaydedildi.", "Bilgi", MessageBoxButton.OK, MessageBoxImage.Information);
                             }
                         }
                     }
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Hata: " + ex.Message);
+                    MessageBox.Show("Hata: " + ex.Message, "Hatalı İşlem Tespit Edildi", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
             else
             {
-                MessageBox.Show("Lütfen tüm girişleri doldurun.");
+                MessageBox.Show("Lütfen tüm girişleri doldurun.", "Hatalı İşlem Tespit Edildi", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
     }

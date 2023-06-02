@@ -5,7 +5,7 @@ VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentACarApplication", "RentACarApplication\RentACarApplication.csproj", "{2F42A3EC-88F3-494E-8CC9-640B9BB52788}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Rent A Car Application Setup", "..\Rent A Car Application Setup\Rent A Car Application Setup.vdproj", "{4AA55056-3E9A-4811-B97A-040A59E5B2C2}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Rent A Car Application by Batuhan CAN", "Rent A Car Application by Batuhan CAN\Rent A Car Application by Batuhan CAN.vdproj", "{1F237936-7541-445B-AA4D-0B95B2B43C34}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,8 +17,8 @@ Global
 		{2F42A3EC-88F3-494E-8CC9-640B9BB52788}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F42A3EC-88F3-494E-8CC9-640B9BB52788}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F42A3EC-88F3-494E-8CC9-640B9BB52788}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4AA55056-3E9A-4811-B97A-040A59E5B2C2}.Debug|Any CPU.ActiveCfg = Debug
-		{4AA55056-3E9A-4811-B97A-040A59E5B2C2}.Release|Any CPU.ActiveCfg = Release
+		{1F237936-7541-445B-AA4D-0B95B2B43C34}.Debug|Any CPU.ActiveCfg = Debug
+		{1F237936-7541-445B-AA4D-0B95B2B43C34}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
