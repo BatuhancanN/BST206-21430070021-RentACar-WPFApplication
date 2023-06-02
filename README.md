@@ -11,4 +11,6 @@ Uygulamanın tüm kodları repoda bulunmakta. İndirdiğiniz projedeki "SqlServe
 Uygulamanın sorunsuz çalışması için cihazınızda "Sql Server Management Studio 18" ve üstü kurulu olması gerekiyor. 
 Kurulum sonrası masaüstüne gelen "RentACarDB.bak" dosyasını, sql server aracılığıyla sisteme entegre edin.
 
-Uygulama tanıtım videosu:
+Tanıtım Videosu: https://www.youtube.com/watch?v=k6XKBCwZQUk
+
+Kurulum videosu: https://www.youtube.com/watch?v=raWy0Bda2aI
