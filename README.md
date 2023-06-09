@@ -8,9 +8,17 @@ Teslim alma butonuna tıklandığında açılan formda aracın güncel trip bilg
 
 Uygulamanın tüm kodları repoda bulunmakta. İndirdiğiniz projedeki "SqlServerBaglanti.cs" adındaki dosyada bağlantı parametresini kendi sql server ayarlarınıza göre güncelleyin. İsterseniz güncelleme sonrası projeye dahil olan setup projesini yeniden derleyerek sizde sorunsuz çalışacak olan projenin kurulum dosyasını elde edersiniz. Gerekli veritabanı dosyası hem repoda hem de setup projesinde bulunmaktadır.
 
-Uygulamanın sorunsuz çalışması için cihazınızda "Sql Server Management Studio 18" ve üstü kurulu olması gerekiyor. 
+### Genel Bakış
+![](https://github.com/BatuhancanN/RentACar-WPFApplication/blob/main/RentACarApplication/ana%20sayfa.PNG)
+
+### Veritabanı Şeması
+![](https://github.com/BatuhancanN/RentACar-WPFApplication/blob/main/RentACarApplication/vt.PNG)
+
+Uygulamanın sorunsuz çalışması için cihazınızda "Sql Server 2019" ve üstü kurulu olması gerekiyor. 
 Kurulum sonrası masaüstüne gelen "RentACarDB.bak" dosyasını, sql server aracılığıyla sisteme entegre edin.
 
-Tanıtım Videosu: https://www.youtube.com/watch?v=k6XKBCwZQUk
+#### Tanıtım Videosu
+[<img src="https://github.com/BatuhancanN/RentACar-WPFApplication/blob/main/RentACarApplication/watch-video-button.png?raw=true" width="40%">](https://www.youtube.com/watch?v=k6XKBCwZQUk "Tanıtım Videosu")
+
 
 Kurulum Videosu: https://www.youtube.com/watch?v=raWy0Bda2aI
