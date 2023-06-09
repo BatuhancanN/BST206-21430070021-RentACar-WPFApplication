@@ -22,3 +22,5 @@ Kurulum sonrası masaüstüne gelen "RentACarDB.bak" dosyasını, sql server ara
 
 
 Kurulum Videosu: https://www.youtube.com/watch?v=raWy0Bda2aI
+
+Uygulamayı sıfırdan öğrenerek geliştirdim. Eksiklerini elimden geldiğince kapatıp olabildiğince sektörde işe yarayacak bir uygulama çıkarmaya çalıştım. Yaklaşık 1 ayı aşan bir sürede tamamlamam mümkün oldu. Kullanmak isteyenler bana ulaşabilirler.
