@@ -17,10 +17,12 @@ Uygulamanın tüm kodları repoda bulunmakta. İndirdiğiniz projedeki "SqlServe
 Uygulamanın sorunsuz çalışması için cihazınızda "Sql Server 2019" ve üstü kurulu olması gerekiyor. 
 Kurulum sonrası masaüstüne gelen "RentACarDB.bak" dosyasını, sql server aracılığıyla sisteme entegre edin.
 
-#### Tanıtım Videosu
+#### Tanıtım Videosu İçin Tıklayın
 [<img src="https://github.com/BatuhancanN/RentACar-WPFApplication/blob/main/RentACarApplication/watch-video-button.png?raw=true" width="40%">](https://www.youtube.com/watch?v=k6XKBCwZQUk "Tanıtım Videosu")
 
+#### Kurulum Videosu İçin Tıklayın
+[<img src="https://github.com/BatuhancanN/RentACar-WPFApplication/blob/main/RentACarApplication/watch-video-button.png?raw=true" width="40%">](https://www.youtube.com/watch?v=raWy0Bda2aI "Kurulum Videosu")
 
-Kurulum Videosu: https://www.youtube.com/watch?v=raWy0Bda2aI
+##### Uygulamayı sıfırdan öğrenerek geliştirdim. Eksiklerini elimden geldiğince kapatıp olabildiğince sektörde işe yarayacak bir uygulama çıkarmaya çalıştım. Yaklaşık 1 ayı aşan bir sürede tamamlamam mümkün oldu. Kullanmak isteyenler bana ulaşabilirler.
 
-Uygulamayı sıfırdan öğrenerek geliştirdim. Eksiklerini elimden geldiğince kapatıp olabildiğince sektörde işe yarayacak bir uygulama çıkarmaya çalıştım. Yaklaşık 1 ayı aşan bir sürede tamamlamam mümkün oldu. Kullanmak isteyenler bana ulaşabilirler.
+İletişim: kaymayolu.rasyon0k@icloud.com & Instagram | batymeister
